@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" [formGroup]="form" >
   <div class="container">
     <div style="display: flex">
       <img class="logo" src="./../../assets/icon/snowflake.svg" alt="logo">
@@ -6,7 +6,10 @@
     </div>
     <div class="title_description">Hello! let's get started</div>
     <div class="sing_in_con">Sign in to continue.</div>
-    <div class="text_input"><input type="text" placeholder="Username"></div>
+    <div class="text_input"><input type="text" placeholder="Username" formControlName="username"></div>
+    <div *ngIf="form.get('username').invalid && (form.get('username').dirty || form.get('username').touched)">
+      <div *ngIf="form.get('username').errors.Required">name is required</div>
+    </div>
     <div *ngIf="!isLogin" class="text_input"><input type="text" placeholder="Email"></div>
     <div class="text_input"><input type="text" placeholder="Password"></div>
     <div *ngIf="!isLogin" class="text_input"><input type="text" placeholder="Confirm Password"></div>
