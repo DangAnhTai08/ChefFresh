@@ -1,0 +1,42 @@
+<div class="main">
+  <div class="container">
+    <div style="display: flex">
+      <img class="logo" src="./../../assets/icon/snowflake.svg" alt="logo">
+      <div class="title">CheF FresH</div>
+    </div>
+    <div class="title_description">Hello! let's get started</div>
+    <div class="sing_in_con">Sign in to continue.</div>
+    <div class="text_input"><input type="text" placeholder="Username"></div>
+    <div *ngIf="!isLogin" class="text_input"><input type="text" placeholder="Email"></div>
+    <div class="text_input"><input type="text" placeholder="Password"></div>
+    <div *ngIf="!isLogin" class="text_input"><input type="text" placeholder="Confirm Password"></div>
+    <div *ngIf="!isLogin" (click)="isLogin = !isLogin" class="button_sing_in">SIGN UP</div>
+    <div *ngIf="isLogin" class="button_sing_in">SIGN IN</div>
+    <div *ngIf="isLogin" class="checkbox_input">
+      <div class="check_keep">
+        <input id="input" type="checkbox">
+        <label class="check_label" for="input">Keep me signed in</label>
+      </div>
+      <a class="forget_password" href="#">Forgot password?</a>
+    </div>
+    <div *ngIf="!isLogin" class="checkbox_input">
+      <div class="check_keep">
+        <input id="input_agree" type="checkbox">
+        <label class="check_label" for="input_agree">I agree to all Terms & Conditions</label>
+      </div>
+    </div>
+    <a class="sing_in_facebook" href="https://www.facebook.com/" target="_blank">
+      <div class="connection">
+        <img style="margin-right: 20px" src="./../../assets/icon/facebook.svg" alt=""> Connect using facebook
+      </div>
+    </a>
+    <a class="sing_in_google" href="https://mail.google.com/mail/" target="_blank">
+      <div class="connection google"><img style="margin-right: 20px" src="./../../assets/icon/google.svg" alt="">
+        Connect using google
+      </div>
+    </a>
+    <div *ngIf="isLogin" class="footer">Don't have an account? <a href="javascript:"
+                                                                  (click)="isLogin = !isLogin">Create</a></div>
+    <div *ngIf="!isLogin" class="footer">Already have an account? <a href="#">Login</a></div>
+  </div>
+</div>

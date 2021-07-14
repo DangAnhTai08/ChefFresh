@@ -1,0 +1,143 @@
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../../assets/image/traicay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: #F5F7FF;
+  padding: 3rem;
+}
+
+.logo {
+  width: 80px;
+}
+
+.title {
+  font-size: 70px;
+  color: #75d5f2;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.title_description {
+  margin-top: 30px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.sing_in_con {
+  font-size: .9375rem;
+  color: gray;
+}
+
+.text_input {
+  width: 100%;
+  border-color: #e1e9dfd9;
+  border-width: 1px;
+  border-style: solid;
+  margin: 24px 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.text_input input::placeholder {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.text_input input {
+  width: -webkit-fill-available;
+  padding: 1.5rem;
+  outline: 0;
+  border: 0;
+}
+
+.button_sing_in {
+  padding: 25px;
+  text-align: center;
+  background-color: #75d5f2;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button_sing_in:hover{
+  background-color: #1715da;
+}
+
+.checkbox_input {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 0;
+}
+
+.check_keep {
+  display: flex;
+  align-items: center;
+}
+
+.check_label {
+  margin-left: 5px;
+}
+
+.forget_password {
+  text-decoration: none;
+  color: #24292e;
+  transition: 0.5s;
+}
+
+.forget_password:hover {
+  text-decoration: underline;
+  color: #1d88e0;
+}
+
+.sing_in_facebook {
+  text-decoration: none;
+}
+
+.connection {
+  background-color: #318edc;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.connection:hover {
+  opacity: .7;
+}
+
+.connection img {
+  width: 20px;
+}
+
+.google {
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #318edc;
+  color: #318edc;
+}
+
+.sing_in_google {
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
